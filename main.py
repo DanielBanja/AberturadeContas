@@ -2,8 +2,8 @@
 from os import write
 from numpy.core.fromnumeric import size
 import streamlit as st;
-import controllers.ac as ac
-import models.AberturadeContas as AberturadeContas
+#import controllers.ac as ac
+#import models.AberturadeContas as AberturadeContas
 
 st.sidebar.title('Menu')
 paginaSelecionada = st.sidebar.selectbox(label='Selecione a página', options=['Abertura de contas', 'Resumo Flog(Em breve)', 'Resumo Funcionário (Em breve)', 'POBJ Produção (Em breve)'])
