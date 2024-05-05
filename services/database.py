@@ -1,6 +1,6 @@
 import pyodbc
 
-SERVER = 'www.infinitinet.com.br'
+SERVER = 'https://br906.hostgator.com.br'
 DATABASE = 'dani9154_teste_abertura_contas'
 USERNAME = 'dani9154_dbac'
 PASSWORD = 'dbac2099'
