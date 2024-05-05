@@ -13,9 +13,11 @@ if paginaSelecionada == 'Abertura de contas':
     with st.form(key="include_base"):
         input_name = st.selectbox(label="Selecione o seu nome", options=["","Daniel Banja","Gabriella Oliveira","Diego Farinha","Bradesco Expresso(MedicFarm)"])
         input_conta = st.number_input(label="Insira o número da Conta (Sem dígito)", format='%d', step=1)
+        input_rest = st.selectbox(label="Selecione o Grau de Restrição", options=["1","2","3","4","5"])       
         input_produto = st.selectbox(label="Selecione o produto", options=["","Invest", "Cheque Especial", "Lime", "Cartão de Crédito"])
         input_qtde = st.number_input(label="Insira a quantidade", format='%d', step=1)
-        input_valor = st.number_input(label="Insira o Valor", step=100, )    
+        input_valor = st.number_input(label="Insira o Valor", step=100, )
+        input_obs = st.text_input(label="Observação")    
         input_button_submit = st.form_submit_button(label="Enviar")
     
     if input_button_submit:
